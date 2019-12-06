@@ -1,0 +1,724 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+
+   <meta charset="UTF-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <meta http-equiv="X-UA-Compatible" content="ie=edge">
+   <!-- <link rel="shortcut icon" href="" type="image/x-icon"> -->
+   <link rel="stylesheet" type="text/css" href="./src/dist/slick/slick.css" />
+   <link rel="stylesheet" type="text/css" href="./src/dist/slick/slick-theme.css" />
+   <link rel="stylesheet" href="./src/dist/fancybox/jquery.fancybox.css">
+   <link rel="stylesheet" href="./build/css/style.min.css">
+   <title></title>
+</head>
+
+<body>
+
+   <header class="header">
+      <div class="header__top">
+         <button class="header__catalog button__catalog">
+            <img src="./build/img/header/catalog-img.png" alt="">
+            <span>каталог</span>
+         </button>
+         <div class="header__container">
+            <div class="header__logo">
+               <a href=""><img src="./build/img/header/logo.png" alt=""></a>
+            </div>
+            <div class="header__nav">
+               <a href="#" class="header__nav_link">О компании</a>
+               <a href="#" class="header__nav_link">Услуги</a>
+               <a href="#" class="header__nav_link">Проекты</a>
+               <a href="#" class="header__nav_link">Статьи</a>
+               <a href="#" class="header__nav_link">Контакты</a>
+            </div>
+            <div class="header__schedule">
+               <p>График работы:</p>
+               <p>с 9:00 до 21:00 без выходных</p>
+            </div>
+            <div class="header__call-back">
+               <a href="" class="call-back__phone">8-800-775-48-56</a>
+               <button href="" class="call-back__button">Заказать звонок</button>
+            </div>
+         </div>
+         <div class="header__catalog--open hidden">
+            <div class="header__catalog_item">
+               <img class="catalog__img" src="./build/img/header/img1.png" alt="">
+               <span class="catalog__title">Террасная доска</span>
+            </div>
+            <div class="header__catalog_item">
+               <img class="catalog__img" src="./build/img/header/img2.png" alt="">
+               <span class="catalog__title">Ступени</span>
+            </div>
+            <div class="header__catalog_item">
+               <img class="catalog__img" src="./build/img/header/img3.png" alt="">
+               <span class="catalog__title">Фасадная доска</span>
+            </div>
+            <div class="header__catalog_item">
+               <img class="catalog__img" src="./build/img/header/img4.png" alt="">
+               <span class="catalog__title">Ограждения и заборы</span>
+            </div>
+            <div class="header__catalog_item">
+               <img class="catalog__img" src="./build/img/header/img5.png" alt="">
+               <span class="catalog__title">Хозяйственные блоки</span>
+            </div>
+            <div class="header__catalog_item">
+               <img class="catalog__img" src="./build/img/header/img6.png" alt="">
+               <span class="catalog__title">Садовые аксессуары</span>
+            </div>
+         </div>
+      </div>
+
+      <h1 class="header__title">Постройте красивую террасу из композитной доски ДПК, которая прослужит 30 лет без
+         ремонта и покраски</h1>
+      <h2 class="header__subtitle">Производим более 10 моделей доски, в 15 цветах. Любой заказ за 7 дней, с гарантией до
+         3х лет.</h2>
+
+      <div class="header__form">
+         <div class="form_container">
+            <h3 class="form__title">Отправьте заявку на расчет стоимости материала или строительства под ключ</h3>
+            <form action="">
+               <input class="form__input" type="text" placeholder="Ваше имя" required>
+               <input class="form__input phone_mask" type="text" placeholder="Ваш номер телефона" required>
+               <button class="form__button">Отправить заявку</button>
+            </form>
+         </div>
+      </div>
+
+      <div class="catalog__top_banner">
+         <div class="catalog__top_item">
+            <p class="catalog__top_title">
+               Более<br>
+               <span class="catalog__top_title--plus">+ </span>
+               <span class="catalog__top_title--big-text">1000 м<span
+                     class="catalog__top_title--meter">2</span> </span><br>
+               в наличии на складе
+            </p>
+         </div>
+         <div class="catalog__top_item">
+            <p class="catalog__top_title">
+               В наличии<br>
+               <span class="catalog__top_title--plus">+ </span>
+               <span class="catalog__top_title--big-text">15 </span><br>
+               цветов и фактур
+            </p>
+         </div>
+         <div class="catalog__top_item">
+            <p class="catalog__top_title">
+               Более<br>
+               <span class="catalog__top_title--plus">+ </span>
+               <span class="catalog__top_title--big-text">10 </span><br>
+               разновидностей досок
+            </p>
+         </div>
+         <div class="catalog__top_item">
+            <p class="catalog__top_title">
+               Строим<br>
+               <span class="catalog__top_title--plus">+ </span>
+               <span class="catalog__top_title--big-text"><span
+                     class="catalog__top_title--full-construction">"под ключ"</span> </span><br>
+            </p>
+         </div>
+      </div>
+
+   </header>
+
+   <main class="">
+      <section class="catalog">
+         <div class="catalog__container">
+            <div class="catalog__top">
+               <div class="catalog__name">
+                  <h2 class="catalog__name_title">Каталог<br> товаров</h2>
+                  <span class="catalog__name_subtitle">Строим террасы<br> под ключ</span>
+               </div>
+            </div>
+
+            <div class="catalog__items">
+               <div class="catalog__item">
+                  <h4 class="catalog__item_title">Террасная доска</h4>
+                  <a href="#" class="catalog__item_link">Подробнее ➔</a>
+               </div>
+               <div class="catalog__item">
+                  <h4 class="catalog__item_title">Ступени</h4>
+                  <a href="#" class="catalog__item_link">Подробнее ➔</a>
+               </div>
+               <div class="catalog__item">
+                  <h4 class="catalog__item_title">Фасадная доска</h4>
+                  <a href="#" class="catalog__item_link">Подробнее ➔</a>
+               </div>
+               <div class="catalog__item">
+                  <h4 class="catalog__item_title">Ограждения и заборы</h4>
+                  <a href="#" class="catalog__item_link">Подробнее ➔</a>
+               </div>
+               <div class="catalog__item">
+                  <h4 class="catalog__item_title">Хозяйственные блоки</h4>
+                  <a href="#" class="catalog__item_link">Подробнее ➔</a>
+               </div>
+               <div class="catalog__item">
+                  <h4 class="catalog__item_title">Садовые аксессуары</h4>
+                  <a href="#" class="catalog__item_link">Подробнее ➔</a>
+               </div>
+               <div class="catalog__item">
+                  <h4 class="catalog__item_title">Регулируемые опоры</h4>
+                  <a href="#" class="catalog__item_link">Подробнее ➔</a>
+               </div>
+            </div>
+
+            <div class="catalog__form">
+               <div class="header__form form_container__mt">
+                  <div class="form_container">
+                     <h3 class="form__title">Трудно разобраться в каталоге?</h3>
+                     <h4 class="form__subtitle">Оставьте свои данные и наш специалист проконсультирует и поможет
+                        подобрать нужный материал</h4>
+                     <form action="">
+                        <input class="form__input" type="text" placeholder="Ваше имя" required>
+                        <input class="form__input phone_mask" type="text" placeholder="Ваш номер телефона" required>
+                        <button class="form__button">Отправить заявку</button>
+                     </form>
+                  </div>
+               </div>
+            </div>
+
+         </div>
+      </section>
+
+      <section class="gallery">
+         <div class="gallery__container">
+            <div class="catalog__name">
+               <h2 class="catalog__name_title">Фотогалерея<br> готовых работ</h2>
+               <span class="catalog__name_subtitle">Посмотрите примеры<br> наших работ</span>
+               <h5 class="catalog__name_second-title">За 5 лет нами выполнены более 1000 проектов террас, беседок, патио
+               </h5>
+            </div>
+         </div>
+
+         <div class="gallery__slick">
+
+            <div>
+               <div class="gallery__slick_item">
+                  <div class="gallery__left">
+                     <div class="gallery__left_container">
+                        <span class="gallery__left--sm-text">Обьект:</span>
+                        <h3 class="gallery__title">Терраса в<br> “ЖК Акваполис”</h3>
+                        <div class="gallery__title_description">
+                           <span
+                              class="gallery__left--sm-text gallery__left--grey">Площадь:<br><span>3000м</span><sup>2</sup></span>
+                           <span class="gallery__left--sm-text gallery__left--grey">Срок:<br><span>20 дней</span></span>
+                        </div>
+                        <span class="gallery__left_task">Задача</span>
+                        <span class="gallery__left_subtask">В каждом случае цена и сроки<br> определяются
+                           индивидуально.<br>— Закажите консультацию </span>
+                        <span class="gallery__left_task">Решение</span>
+                        <span class="gallery__left_subtask">В каждом случае цена и сроки<br> определяются
+                           индивидуально.<br>— Закажите консультацию </span>
+                     </div>
+
+                  </div>
+                  <div class="gallery__right">
+                     <img class="gallery__right_img" src="./build/img/main/gallery/img1.png" alt="">
+                  </div>
+               </div>
+            </div>
+
+            <div>
+               <div class="gallery__slick_item">
+                  <div class="gallery__left">
+                     <div class="gallery__left_container">
+                        <span class="gallery__left--sm-text">Обьект:</span>
+                        <h3 class="gallery__title">Терраса в<br> “ЖК Акваполис”</h3>
+                        <div class="gallery__title_description">
+                           <span
+                              class="gallery__left--sm-text gallery__left--grey">Площадь:<br><span>5000м</span><sup>2</sup></span>
+                           <span class="gallery__left--sm-text gallery__left--grey">Срок:<br><span>10 дней</span></span>
+                        </div>
+                        <span class="gallery__left_task">Задача</span>
+                        <span class="gallery__left_subtask">В каждом случае цена и сроки<br> определяются
+                           индивидуально.<br>— Закажите консультацию </span>
+                        <span class="gallery__left_task">Решение</span>
+                        <span class="gallery__left_subtask">В каждом случае цена и сроки<br> определяются
+                           индивидуально.<br>— Закажите консультацию </span>
+                     </div>
+
+                  </div>
+                  <div class="gallery__right">
+                     <img class="gallery__right_img" src="./build/img/main/gallery/img1.png" alt="">
+                  </div>
+               </div>
+            </div>
+            <div>
+               <div class="gallery__slick_item">
+                  <div class="gallery__left">
+                     <div class="gallery__left_container">
+                        <span class="gallery__left--sm-text">Обьект:</span>
+                        <h3 class="gallery__title">Терраса в<br> “ЖК Акваполис”</h3>
+                        <div class="gallery__title_description">
+                           <span
+                              class="gallery__left--sm-text gallery__left--grey">Площадь:<br><span>5000м</span><sup>2</sup></span>
+                           <span class="gallery__left--sm-text gallery__left--grey">Срок:<br><span>10 дней</span></span>
+                        </div>
+                        <span class="gallery__left_task">Задача</span>
+                        <span class="gallery__left_subtask">В каждом случае цена и сроки<br> определяются
+                           индивидуально.<br>— Закажите консультацию </span>
+                        <span class="gallery__left_task">Решение</span>
+                        <span class="gallery__left_subtask">В каждом случае цена и сроки<br> определяются
+                           индивидуально.<br>— Закажите консультацию </span>
+                     </div>
+
+                  </div>
+                  <div class="gallery__right">
+                     <img class="gallery__right_img" src="./build/img/main/gallery/img1.png" alt="">
+                  </div>
+               </div>
+            </div>
+            <div>
+               <div class="gallery__slick_item">
+                  <div class="gallery__left">
+                     <div class="gallery__left_container">
+                        <span class="gallery__left--sm-text">Обьект:</span>
+                        <h3 class="gallery__title">Терраса в<br> “ЖК Акваполис”</h3>
+                        <div class="gallery__title_description">
+                           <span
+                              class="gallery__left--sm-text gallery__left--grey">Площадь:<br><span>5000м</span><sup>2</sup></span>
+                           <span class="gallery__left--sm-text gallery__left--grey">Срок:<br><span>10 дней</span></span>
+                        </div>
+                        <span class="gallery__left_task">Задача</span>
+                        <span class="gallery__left_subtask">В каждом случае цена и сроки<br> определяются
+                           индивидуально.<br>— Закажите консультацию </span>
+                        <span class="gallery__left_task">Решение</span>
+                        <span class="gallery__left_subtask">В каждом случае цена и сроки<br> определяются
+                           индивидуально.<br>— Закажите консультацию </span>
+                     </div>
+
+                  </div>
+                  <div class="gallery__right">
+                     <img class="gallery__right_img" src="./build/img/main/gallery/img1.png" alt="">
+                  </div>
+               </div>
+            </div>
+            <div>
+               <div class="gallery__slick_item">
+                  <div class="gallery__left">
+                     <div class="gallery__left_container">
+                        <span class="gallery__left--sm-text">Обьект:</span>
+                        <h3 class="gallery__title">Терраса в<br> “ЖК Акваполис”</h3>
+                        <div class="gallery__title_description">
+                           <span
+                              class="gallery__left--sm-text gallery__left--grey">Площадь:<br><span>5000м</span><sup>2</sup></span>
+                           <span class="gallery__left--sm-text gallery__left--grey">Срок:<br><span>10 дней</span></span>
+                        </div>
+                        <span class="gallery__left_task">Задача</span>
+                        <span class="gallery__left_subtask">В каждом случае цена и сроки<br> определяются
+                           индивидуально.<br>— Закажите консультацию </span>
+                        <span class="gallery__left_task">Решение</span>
+                        <span class="gallery__left_subtask">В каждом случае цена и сроки<br> определяются
+                           индивидуально.<br>— Закажите консультацию </span>
+                     </div>
+
+                  </div>
+                  <div class="gallery__right">
+                     <img class="gallery__right_img" src="./build/img/main/gallery/img1.png" alt="">
+                  </div>
+               </div>
+            </div>
+
+         </div>
+
+      </section>
+
+      <section class="calculator">
+         <div class="calculator__container">
+            <h2 class="calculator__title">Калькулятор</h2>
+            <h3 class="calculator__subtitle">&mdash; Ответьте на 5 вопросов и <span
+                  class="calculator__subtitle--orange">узнайте бюджет</span> Вашего строительства</h3>
+            <div class="header__form">
+               <div class="form_container">
+                  <h3 class="form__title">1. Выберите тип террасной доски</h3>
+                  <h4 class="form__subtitle">Оставьте свои данные и наш специалист проконсультирует и поможет
+                     подобрать нужный материал</h4>
+                  <form class="form__form" action="">
+                     <div class="form__subtitle_radio-inputs">
+                        <label class="input-helper input-helper--radio">
+                           <input type="radio" name="radio" hidden checked>
+                           <span></span>
+                           <span class="form--bold">Шовная </span> (шов при
+                           укладке 4 мм для вентиляции под террасой и лучшего отвода воды)
+                        </label>
+                        <label class="input-helper input-helper--radio">
+                           <input type="radio" name="radio" hidden>
+                           <span></span>
+                           <span class="form--bold">Безшовная </span>
+                           (соединяется друг с другом образую сплошной настил. Есть ограничения для открытых
+                           площадок)
+                        </label>
+                     </div>
+                     <button class="form__button">Отправить заявку</button>
+                  </form>
+               </div>
+            </div>
+         </div>
+      </section>
+
+      <section class="complex-project">
+         <div class="complex-project__container">
+            <div class="form_container form_container__complex-project">
+               <h3 class="form__title">Если у Вас сложный проект</h3>
+               <h4 class="form__subtitle">Оставьте свои данные и наш специалист свяжется с Вами через 5 мин. для
+                  обсуждения деталей</h4>
+               <form action="">
+                  <input class="form__input" type="text" placeholder="Ваше имя" required>
+                  <input class="form__input phone_mask" type="text" placeholder="Ваш номер телефона" required>
+                  <input class="form__input" type="text" placeholder="Ваш E-mail" required>
+                  <button class="form__button">Отправить заявку</button>
+               </form>
+            </div>
+            <div class="complex-project__img">
+               <img src="./build/img/main/complex-project/img.png" alt="">
+            </div>
+         </div>
+      </section>
+
+      <section class="advantages">
+         <div class="advantages__container">
+            <p class="advantages__text">Почему выгодно купить террасную или фасадную доску из ДПК в ДекМастер?</p>
+            <div class="advantages__items">
+               <div class="advantages__item">
+                  <img src="./build/img/main/advantages/img1.png" class="advantages__item_img">
+                  <h5 class="advantages__item_title">Большие складские запасы </h5>
+                  <span class="advantages__item_subtitle">- Вы можете быстро купить материал при срочной
+                     потребности</span>
+               </div>
+               <div class="advantages__item">
+                  <img src="./build/img/main/advantages/img2.png" class="advantages__item_img">
+                  <h5 class="advantages__item_title">Собственное производство </h5>
+                  <span class="advantages__item_subtitle">- сделаем любой заказ по цвету и размеру</span>
+               </div>
+               <div class="advantages__item">
+                  <img src="./build/img/main/advantages/img3.png" class="advantages__item_img">
+                  <h5 class="advantages__item_title">Склад в Москве</h5>
+                  <span class="advantages__item_subtitle">- Вам не придется ехать далек в подмосковье для получиения
+                     заказа</span>
+               </div>
+               <div class="advantages__item">
+                  <img src="./build/img/main/advantages/img4.png" class="advantages__item_img">
+                  <h5 class="advantages__item_title">Собственный парк автомобилей </h5>
+                  <span class="advantages__item_subtitle">- доставим материал в день заказа до объекта</span>
+               </div>
+               <div class="advantages__item">
+                  <img src="./build/img/main/advantages/img5.png" class="advantages__item_img">
+                  <h5 class="advantages__item_title">Своя монтажная бригада</h5>
+                  <span class="advantages__item_subtitle">- расширенная гарантия при заказе монтажа в ДекМастер</span>
+               </div>
+               <div class="advantages__item">
+                  <img src="./build/img/main/advantages/img6.png" class="advantages__item_img">
+                  <h5 class="advantages__item_title">Удобная оплата</h5>
+                  <span class="advantages__item_subtitle">- Вы можете оплатить заказ при получении</span>
+               </div>
+            </div>
+         </div>
+      </section>
+
+      <section class="our-production">
+         <div class="our-production__container">
+            <div class="catalog__name">
+               <h2 class="catalog__name_title">Фотогалерея<br> нашего производства</h2>
+               <span class="catalog__name_subtitle">Посмотрите на<br> наше производство</span>
+            </div>
+
+            <div class="our-production__content">
+               <div class="our-production__left">
+                  <img src="./build/img/main/our-production/img1.png" alt="">
+                  <div class="our-production__quote">
+                     <img src="./build/img/main/our-production/man.png" class="our-production__quote_img">
+                     <div class="our-production__quote_context">
+                        <span class="">“</span>
+                        <p>Технология производства деталей из ДПК практически не отличается от экструзии аналогичных
+                           изделий из вторичной пластмассы, но имеет свои особенности.</p>
+                     </div>
+                     </img>
+                  </div>
+               </div>
+               <div class="our-production__right">
+                  <img src="./build/img/main/our-production/img2.png" alt="">
+                  <img src="./build/img/main/our-production/img3.png" alt="">
+                  <img src="./build/img/main/our-production/img4.png" alt="">
+               </div>
+            </div>
+
+         </div>
+      </section>
+
+      <div class="section-video">
+         <div class="section-video__container">
+            <h3 class="section-video__title">Смотрите видео о нашем производстве<br> и свойствах террасной доски из ДПК
+            </h3>
+            <a href="" class="section-video__link">
+               <img src="./build/img/main/video/play.png" alt="">
+            </a>
+         </div>
+      </div>
+
+      <section class="catalog">
+         <div class="catalog__container--mt-0">
+            <div class="catalog__name">
+               <h2 class="catalog__name_title">Каталог<br> товаров</h2>
+               <span class="catalog__name_subtitle">Строим террасы<br> под ключ</span>
+            </div>
+         </div>
+
+         <div class="catalog__items">
+            <div class="catalog__item">
+               <h4 class="catalog__item_title">Террасная доска</h4>
+               <a href="#" class="catalog__item_link">Подробнее ➔</a>
+            </div>
+            <div class="catalog__item">
+               <h4 class="catalog__item_title">Ступени</h4>
+               <a href="#" class="catalog__item_link">Подробнее ➔</a>
+            </div>
+            <div class="catalog__item">
+               <h4 class="catalog__item_title">Фасадная доска</h4>
+               <a href="#" class="catalog__item_link">Подробнее ➔</a>
+            </div>
+            <div class="catalog__item">
+               <h4 class="catalog__item_title">Ограждения и заборы</h4>
+               <a href="#" class="catalog__item_link">Подробнее ➔</a>
+            </div>
+            <div class="catalog__item">
+               <h4 class="catalog__item_title">Хозяйственные блоки</h4>
+               <a href="#" class="catalog__item_link">Подробнее ➔</a>
+            </div>
+            <div class="catalog__item">
+               <h4 class="catalog__item_title">Садовые аксессуары</h4>
+               <a href="#" class="catalog__item_link">Подробнее ➔</a>
+            </div>
+            <div class="catalog__item">
+               <h4 class="catalog__item_title">Регулируемые опоры</h4>
+               <a href="#" class="catalog__item_link">Подробнее ➔</a>
+            </div>
+         </div>
+
+         </div>
+      </section>
+
+      <section class="full-form">
+         <div class="full-form__container">
+            <h3 class="full-form__title">Наша компания расширяет дилерскую сеть и<br> предлагает Вам стать
+               представителем в своем регионе</h3>
+            <span class="full-form__subtitle">С деталями можно ознакомится на странице для дилеров или оставить свои
+               данные и наш специалист оптового отдела Вам перезвонит </span>
+            <form class="full-form__form" action="">
+               <input class="form__input" type="text" placeholder="Ваше имя" required>
+               <input class="form__input phone_mask" type="text" placeholder="Ваш номер телефона" required>
+               <input class="form__input" type="text" placeholder="Ваш E-mail" required>
+               <input class="form__input" type="text" placeholder="Название организации" required>
+               <button class="form__button">Отправить заявку</button>
+            </form>
+         </div>
+      </section>
+
+      <section class="certificates">
+         <div class="certificates__container">
+            <h3 class="certificates__title">Сертификаты</h3>
+            <span class="certificates__subtitle">— Вся продукция ДекМастер прошла испытания и сертифицирована</span>
+            <div class="certificates__items">
+               <div class="certificates__item">
+                  <a id="single_image" href="./build/img/main/certificates/certificate.png"><img
+                        src="./build/img/main/certificates/certificate.png" alt="" /></a>
+                  <span>Пожарный сертификат</span>
+               </div>
+               <div class="certificates__item">
+                  <a id="single_image" href="./build/img/main/certificates/certificate.png"><img
+                        src="./build/img/main/certificates/certificate.png" alt="" /></a>
+                  <span>Сертификат качества</span>
+               </div>
+               <div class="certificates__item">
+                  <a id="single_image" href="./build/img/main/certificates/certificate.png"><img
+                        src="./build/img/main/certificates/certificate.png" alt="" /></a>
+                  <span>Протокол испытаний</span>
+               </div>
+            </div>
+            <img class="certificates__paper-img" src="./build/img/main/certificates/paper .png" alt="">
+         </div>
+      </section>
+
+      <section class="discount">
+         <div class="discount__container">
+            <h3 class="discount__title">Сэкономь время и нервы, доверь работу<br> профессионалам мы знаем все тонкости
+               работы с ДПК</h3>
+            <div class="header__form header__form--discount">
+               <div class=" required_container form_container--discount">
+                  <h3 class="form__title">Закажи монтаж до конца месяца<br>и получи дополнительно <span
+                        class="discount__title--orange">скидку 3%</span> на материал</h3>
+                  <form class="discount__form" action="">
+                     <input class="form__input" type="text" placeholder="Ваше имя" required>
+                     <input class="form__input phone_mask" type="text" placeholder="Ваш номер телефона" required>
+                     <input class="form__input" type="text" placeholder="Название организации" required>
+                     <button class="form__button">Отправить заявку</button>
+                  </form>
+               </div>
+            </div>
+         </div>
+      </section>
+
+      <section class="reviews">
+         <div class="reviews__container">
+            <div class="catalog__name">
+               <h2 class="catalog__name_title">Отзывы<br> клиентов</h2>
+               <span class="catalog__name_subtitle">Что о нас говорят<br> клиенты</span>
+            </div>
+            <div class="reviews__slick">
+
+               <div>
+                  <div class="reviews__slick_item">
+                     <img class="reviews-slick__item_img" src="./build/img/main/reviews/img.png" alt="">
+                     <div class="reviews-slick__item_context">
+                        <span>Николаев Сергей Владимирович</span>
+                        <p>С строительством загородного дома проблем у меня возникало до того момента, пока я не дошел
+                           до ремонта террасы – мне нужно было сделать ее максимально приглядной и надежной. В интернете
+                           прочитал, что согласно моим требованиям, в идеале нужна террасная доска из древесно
+                           полимерного композита. Честно говоря, когда я наткнулся на эту компанию, я понятия не имел,
+                           что это за материал и почему именно его нужно купить – я лишь последовал совету специалистов.
+                           Сотрудники компании мне все грамотно рассказали, так сказать, разложили по полочкам
+                           информацию и я понял, что нужно покупать именно такой строительный материал. Раньше работал с
+                           деревом, но, судя по всему, с ним мне пора уже попрощаться. Компании желаю только
+                           процветания.</p>
+                     </div>
+                  </div>
+               </div>
+               <div>
+                  <div class="reviews__slick_item">
+                     <img class="reviews-slick__item_img" src="./build/img/main/reviews/img2.png" alt="">
+                     <div class="reviews-slick__item_context">
+                        <span>Василиса Николаевна Городец</span>
+                        <p>Поначалу не решалась на декинг. Я человек уже не молодой и не разбираюсь в этой современности
+                           ремонтных работ. Однако, цена товара была крайне привлекательна, да и с деревом я мучилась в
+                           своем предыдущем доме, поэтому подумала и решила, а почему бы не рискнуть и не попробовать
+                           такой строительный материал? Много говорить не буду, но скажу, что уже полтора года любуюсь
+                           на свою террасу, а все гости спрашивают, как я соорудила такую красоту. Теперь всем советую
+                           эту декмастер. Остальные комментарии будут излишни.</p>
+                     </div>
+                  </div>
+               </div>
+               <div>
+                  <div class="reviews__slick_item">
+                     <img class="reviews-slick__item_img" src="./build/img/main/reviews/img.png" alt="">
+                     <div class="reviews-slick__item_context">
+                        <span>Василиса Николаевна Городец</span>
+                        <p>С строительством загородного дома проблем у меня возникало до того момента, пока я не дошел
+                           до ремонта террасы – мне нужно было сделать ее максимально приглядной и надежной. В интернете
+                           прочитал, что согласно моим требованиям, в идеале нужна террасная доска из древесно
+                           полимерного композита. Честно говоря, когда я наткнулся на эту компанию, я понятия не имел,
+                           что это за материал и почему именно его нужно купить – я лишь последовал совету специалистов.
+                           Сотрудники компании мне все грамотно рассказали, так сказать, разложили по полочкам
+                           информацию и я понял, что нужно покупать именно такой строительный материал. Раньше работал с
+                           деревом, но, судя по всему, с ним мне пора уже попрощаться. Компании желаю только
+                           процветания.</p>
+                     </div>
+                  </div>
+               </div>
+               <div>
+                  <div class="reviews__slick_item">
+                     <img class="reviews-slick__item_img" src="./build/img/main/reviews/img.png" alt="">
+                     <div class="reviews-slick__item_context">
+                        <span>Василиса Николаевна Городец</span>
+                        <p>С строительством загородного дома проблем у меня возникало до того момента, пока я не дошел
+                           до ремонта террасы – мне нужно было сделать ее максимально приглядной и надежной. В интернете
+                           прочитал, что согласно моим требованиям, в идеале нужна террасная доска из древесно
+                           полимерного композита. Честно говоря, когда я наткнулся на эту компанию, я понятия не имел,
+                           что это за материал и почему именно его нужно купить – я лишь последовал совету специалистов.
+                           Сотрудники компании мне все грамотно рассказали, так сказать, разложили по полочкам
+                           информацию и я понял, что нужно покупать именно такой строительный материал. Раньше работал с
+                           деревом, но, судя по всему, с ним мне пора уже попрощаться. Компании желаю только
+                           процветания.</p>
+                     </div>
+                  </div>
+               </div>
+
+            </div>
+         </div>
+      </section>
+
+      <section class="map">
+         <script type="text/javascript" charset="utf-8" async
+            src="https://api-maps.yandex.ru/services/constructor/1.0/js/?um=constructor%3A8e972b5f19e3481c169bf5496a7a57efe6b8ea94b907756b5580b0ededb18c16&amp;width=100%25&amp;height=720&amp;lang=ru_RU&amp;scroll=true">
+         </script>
+         <div class="map__container">
+            <div class="map__contacts">
+               <h5 class="contacts__title">Мы ближе чем кажется</h5>
+               <span class="contacts__subtitle">Телефон:</span>
+               <a class="contacts__phone" href="">8-800-775-48-56</a>
+               <span class="contacts__subtitle">Электронная почта:</span>
+               <a class="contacts__email" href="">info@gofen.ru</a>
+               <span class="contacts__subtitle">Адрес:</span>
+               <p class="contacts__address">г. Москва, 1-ый Нагатинский проезд 4, оф. 322</p>
+               <button class="contacts__button call-back__button2">Написать нам</button>
+            </div>
+         </div>
+      </section>
+
+   </main>
+
+   <footer class="footer">
+      <div class="footer__container">
+         <div class="footer__top">
+            <div class="footer__top_left">
+               <a href="" class="footer__logo">
+                  <img src="./build/img/footer/ДекМастер_лого_3.png" alt="">
+               </a>
+               <div class="footer__social">
+                  <a href=""><img src="./build/img/footer/fb.png" alt=""></a>
+                  <a href=""><img src="./build/img/footer/vk.png" alt=""></a>
+                  <a href=""><img src="./build/img/footer/inst.png" alt=""></a>
+               </div>
+            </div>
+            <div class="footer__top_right">
+               <nav class="footer__nav">
+                  <a href="" class="footer__nav_link">О компании</a>
+                  <a href="" class="footer__nav_link">Услуги</a>
+                  <a href="" class="footer__nav_link">Проекты</a>
+                  <a href="" class="footer__nav_link">Статьи</a>
+                  <a href="" class="footer__nav_link">Контакты</a>
+               </nav>
+            </div>
+         </div>
+         <div class="footer__bottom">
+            <span class="footer__copyright">© 2019 ДекМастер, Все права защищены</span>
+            <a class="footer__confidentiality" href="">Политика Конфиденциальности</a>
+         </div>
+      </div>
+   </footer>
+
+   <div class="popup-callback hidden">
+      <div class="header__form">
+         <div class="form_container">
+            <a href="#" class="popup__close"><img src="./build/img/close.png" alt=""></a>
+            <span class="popup-tnx__title">Заказать звонок</span>
+            <span class="popup-tnx__subtitle">Оставьте свои данные и наш специалист проконсультирует и<br> поможет подобрать нужный материал</span>
+            <form class="popup-callback__form" action="">
+               <input class="form__input" type="text" placeholder="Ваше имя" required>
+               <input class="form__input phone_mask" type="text" placeholder="Ваш номер телефона" required>
+               <button class="form__button">Отправить заявку</button>
+            </form>
+         </div>
+      </div>
+   </div>
+
+   <div class="popup-tnx hidden">
+      <div class="header__form">
+         <div class="form_container">
+            <a href="#" class="popup__close2"><img src="./build/img/close.png" alt=""></a>
+            <span class="popup-tnx__title">Спасибо за заявку</span>
+            <span class="popup-tnx__subtitle">Наш специалист свяжется с Вами в течение нескольких минут<br> и ответит на все Ваши вопросы</span>
+         </div>
+      </div>
+   </div>
+
+   <script src="./src/js/jquery-3.4.1.min.js"></script>
+   <script src="./src/dist/maskinput.js"></script>
+   <script src="./src/dist/fancybox/jquery.fancybox.js"></script>
+   <script src="./src/dist/slick/slick.js"></script>
+   <script src="./build/js/main.min.js"></script>
+   <!-- <script src="./src/js/main.js"></script> -->
+</body>
+
+</html>
