@@ -2,35 +2,35 @@
 
 @font-face {
     font-family: "RalewayRegular";
-    src: url("../../src/fonts/ProximaNova-Regular.ttf") format("truetype");
+    src: url("/src/fonts/ProximaNova-Regular.ttf") format("truetype");
     font-style: normal;
     font-weight: normal;
 }
 
 @font-face {
     font-family: "ProximaNova-Black";
-    src: url("../../src/fonts/ProximaNova-Black.ttf") format("truetype");
+    src: url("/src/fonts/ProximaNova-Black.ttf") format("truetype");
     font-style: normal;
     font-weight: normal;
 }
 
 @font-face {
     font-family: "ProximaNova-Bold";
-    src: url("../../src/fonts/ProximaNova-Bold.ttf") format("truetype");
+    src: url("/src/fonts/ProximaNova-Bold.ttf") format("truetype");
     font-style: normal;
     font-weight: normal;
 }
 
 @font-face {
     font-family: "ProximaNova-Extrabld";
-    src: url("../../src/fonts/ProximaNova-Extrabld.ttf") format("truetype");
+    src: url("/src/fonts/ProximaNova-Extrabld.ttf") format("truetype");
     font-style: normal;
     font-weight: normal;
 }
 
 @font-face {
     font-family: "ProximaNova-SemiboldIt";
-    src: url("../../src/fonts/ProximaNova-SemiboldIt.ttf") format("truetype");
+    src: url("/src/fonts/ProximaNova-SemiboldIt.ttf") format("truetype");
     font-style: normal;
     font-weight: normal;
 }
@@ -39,17 +39,16 @@
 body {
     padding: 0;
     margin: 0;
-    font-family: 'RalewayRegular', sans-serif;
+    font-family: "RalewayRegular";
 }
-
 
 // header
 .header {
     background: url(../../build/img/header/bg.png);
     background-repeat: no-repeat;
-    background-size: 100%;
+    background-size: cover;
     width: 100%;
-    height: 1189px;
+    height: 100%;
     text-align: center;
     position: relative;
 }
@@ -58,6 +57,10 @@ body {
     display: flex;
     flex-direction: row;
     position: relative;
+}
+
+.header__logo_img--mobile {
+    display: none;
 }
 
 .header__catalog {
@@ -74,6 +77,7 @@ body {
     outline: none;
     margin: 24px 15px 0 20px;
     padding: 0;
+    text-decoration: none;
 
     span {
         color: #0e0e0f;
@@ -111,6 +115,10 @@ body {
         cursor: pointer;
         transition: .5s;
     }
+}
+
+.button__menu {
+    display: none;
 }
 
 .catalog__img {
@@ -195,6 +203,7 @@ body {
     margin-left: 91px;
 }
 
+
 .header__nav_link {
     color: #000000;
     font-family: 'RalewayRegular', sans-serif;
@@ -207,6 +216,41 @@ body {
 .header__nav_link:hover {
     color: #ffac08;
     transition: .5s;
+}
+
+.header__nav--mobile {
+    display: none;
+    a {
+        color: #000000;
+        font-family: 'RalewayRegular', sans-serif;
+        font-weight: 600;
+        font-size: 18px;
+        text-decoration: none;
+        margin-right: 40px;
+    }
+
+    a:hover {
+        color: #ffac08;
+        transition: .5s;
+    }
+}
+
+.header__nav--mobile-menu {
+    display: none;
+
+    a {
+        color: #000000;
+        font-family: 'RalewayRegular', sans-serif;
+        font-weight: 600;
+        font-size: 18px;
+        text-decoration: none;
+        margin-right: 0px;
+    }
+
+    a:hover {
+        color: #ffac08;
+        transition: .5s;
+    }
 }
 
 .header__schedule {
@@ -282,8 +326,8 @@ body {
     width: 1556px;
     margin: 150px auto 0;
     text-shadow: 0 0 18px rgba(0, 0, 0, 0.23);
-    color: #ffffff;
     font-family: "ProximaNova-Extrabld";
+    color: #ffffff;
     font-size: 58px;
     font-weight: 400;
     line-height: 76px;
@@ -300,7 +344,7 @@ body {
 }
 
 .header__form {
-    width: 1401px;
+    width: 1402px;
     height: 352px;
     margin: 0 auto;
     background-color: #ffffff8c;
@@ -430,12 +474,14 @@ input[type="text"] {
 .form__form {
     display: flex;
     flex-direction: row;
+    position: relative;
 }
 
 .form__subtitle_radio-inputs {
     margin-right: 70px;
     display: flex;
     flex-direction: column;
+
     input:nth-child(1) {
         margin-bottom: 30px;
     }
@@ -463,9 +509,7 @@ input:focus:-ms-input-placeholder {
     color: transparent;
 }
 
-.hidden {
-    display: none;
-}
+
 
 
 // main
@@ -776,10 +820,12 @@ input:focus:-ms-input-placeholder {
     background-image: url(../../build/img/main/calculator/bg.png);
     background-repeat: no-repeat;
     background-size: 100%;
+
     .form__subtitle {
         margin-bottom: 35px;
         margin-top: -10px;
     }
+
     .form__button {
         top: 30px;
     }
@@ -817,34 +863,24 @@ input:focus:-ms-input-placeholder {
     color: #ffac08;
 }
 
-input[type="radio"]+span {
-    -webkit-appearance: none;
-    width: 22px;
-    height: 22px;
-    border: 1px solid #000000;
-    outline: none;
-    margin: 5px;
-    box-sizing: border-box;
-    display: inline-block;
-    margin-right: 10px;
-}
-
-input[type="radio"]+span {
-    border-radius: 100%;
-}
-
 input[type="radio"]:checked+span:before {
     content: url(../../build/img/main/calculator/check-active.png);
     position: relative;
     top: -2px;
-    left: -2px;
+    left: -4px;
+}
+
+input[type="radio"]+span:before {
+    content: url(../../build/img/main/calculator/check.png);
+    position: relative;
+    top: -2px;
+    left: -4px;
 }
 
 .input-helper--radio {
     display: flex;
     flex-direction: row;
     align-items: center;
-    margin-bottom: 15px;
 }
 
 .complex-project {
@@ -1047,6 +1083,10 @@ input[type="radio"]:checked+span:before {
     flex-direction: row;
     justify-content: center;
     align-items: center;
+}
+
+.our-production__slick {
+    display: none;
 }
 
 .section-video {
@@ -1560,16 +1600,18 @@ input[type="radio"]:checked+span:before {
 // Попап
 
 .popup-tnx {
-    width:100%;
-    min-height:100%;
+    width: 100%;
+    min-height: 100%;
     background-color: #26241da1;
-    overflow:hidden;
-    position:fixed;
-    top:0px;
+    overflow: hidden;
+    position: fixed;
+    top: 0px;
+
     .header__form {
         width: 650px;
         height: 275px;
     }
+
     .form_container {
         width: 620px;
         height: 240px;
@@ -1600,22 +1642,25 @@ input[type="radio"]:checked+span:before {
 }
 
 .popup-callback {
-    width:100%;
-    min-height:100%;
+    width: 100%;
+    min-height: 100%;
     background-color: #26241da1;
-    overflow:hidden;
-    position:fixed;
-    top:0px;
+    overflow: hidden;
+    position: fixed;
+    top: 0px;
+
     .header__form {
         width: 650px;
         height: 490px;
     }
+
     .form_container {
         width: 620px;
         height: 450px;
         position: relative;
         margin-top: 160px;
     }
+
     .header__form form {
         margin-left: 0;
     }
@@ -1626,14 +1671,17 @@ input[type="radio"]:checked+span:before {
     flex-direction: column;
     align-items: center;
     margin: 0;
+
     .form__input:nth-child(1) {
         margin-right: 0;
         margin-top: 30px;
     }
+
     .form__input:nth-child(2) {
         margin-right: 0;
         margin-top: 30px;
     }
+
     .form__button {
         margin-top: 40px;
     }
@@ -1658,6 +1706,62 @@ input[type="radio"]:checked+span:before {
     display: block;
     text-align: center;
     margin-top: 30px;
+}
+
+.header__catalog--mobile {
+    display: none;
+}
+
+
+// Слайдер каталога
+.catalog__items_slider {
+    display: none;
+
+    .catalog__item_slider {
+        width: 177px;
+        height: 570px;
+        margin: 5px;
+    }
+
+    .catalog__item_context {
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-end;
+        margin-left: 20px;
+    }
+}
+
+.catalog__bg_1 {
+    background-image: url(../../build/img/main/catalog/item1.png);
+}
+
+.catalog__bg_2 {
+    background-image: url(../../build/img/main/catalog/item2.png);
+}
+
+.catalog__bg_3 {
+    background-image: url(../../build/img/main/catalog/item3.png);
+}
+
+.catalog__bg_4 {
+    background-image: url(../../build/img/main/catalog/item4.png);
+}
+
+.catalog__bg_5 {
+    background-image: url(../../build/img/main/catalog/item5.png);
+}
+
+.catalog__bg_6 {
+    background-image: url(../../build/img/main/catalog/item6.png);
+}
+
+.catalog__bg_7 {
+    background-image: url(../../build/img/main/catalog/item7.png);
+}
+
+.hidden {
+    display: none;
 }
 
 @import './media.scss'

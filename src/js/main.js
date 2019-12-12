@@ -19,7 +19,13 @@ $('.gallery__slick').slick({
 	infinite: true,
 	speed: 500,
 	fade: true,
-	cssEase: 'linear'
+	cssEase: 'linear',
+	responsive: [{
+		breakpoint: 481,
+		settings: {
+			dots: false
+		}
+	}]
 });
 
 $('.reviews__slick').slick({
@@ -27,6 +33,48 @@ $('.reviews__slick').slick({
 	dotsClass: "my-dots",
 	infinite: true,
 	slidesToShow: 2,
+	slidesToScroll: 1,
+	responsive: [{
+		breakpoint: 481,
+		settings: {
+			arrows: false,
+			centerMode: true,
+			centerPadding: '10px',
+			slidesToShow: 1
+		}
+	}]
+});
+
+$('.catalog__items_slider').slick({
+	dots: false,
+	infinite: true,
+	slidesToShow: 5,
+	slidesToScroll: 1,
+	responsive: [{
+		breakpoint: 768,
+		settings: {
+			arrows: false,
+			centerMode: true,
+			centerPadding: '10px',
+			slidesToShow: 3
+		}
+	},
+	{
+		breakpoint: 481,
+		settings: {
+			arrows: false,
+			centerMode: true,
+			centerPadding: '10px',
+			slidesToShow: 2
+		}
+	},
+]
+});
+
+$('.our-production__slick').slick({
+	dots: false,
+	infinite: true,
+	slidesToShow: 1,
 	slidesToScroll: 1
 });
 
@@ -83,3 +131,13 @@ $(".popup-tnx").on('click', function (e) {
 $(".popup-callback").on('click', function (e) {
 	if (e.target == this) $(".popup-callback").addClass('hidden');
 })
+
+// Появление меню
+
+var clickMenuButton = document.querySelector('.button__menu');
+var mobileMenu = document.querySelector('.header__nav--mobile-menu');
+
+clickMenuButton.addEventListener('click', function () {
+	mobileMenu.classList.toggle('hidden')
+})
+

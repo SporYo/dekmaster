@@ -18,13 +18,18 @@
 
    <header class="header">
       <div class="header__top">
+         <button class="header__catalog button__menu">
+            <img src="./build/img/header/catalog-img.png" alt="">
+            <span>меню</span>
+         </button>
          <button class="header__catalog button__catalog">
             <img src="./build/img/header/catalog-img.png" alt="">
             <span>каталог</span>
          </button>
          <div class="header__container">
             <div class="header__logo">
-               <a href=""><img src="./build/img/header/logo.png" alt=""></a>
+               <a href="#" class="header__logo_img"><img src="./build/img/header/logo.png" alt=""></a>
+               <a href="#" class="header__logo_img--mobile"><img src="./build/img/header/logo-mobile.png" alt=""></a>
             </div>
             <div class="header__nav">
                <a href="#" class="header__nav_link">О компании</a>
@@ -38,10 +43,14 @@
                <p>с 9:00 до 21:00 без выходных</p>
             </div>
             <div class="header__call-back">
-               <a href="" class="call-back__phone">8-800-775-48-56</a>
+               <a href="tel:+78007754856" class="call-back__phone">8-800-775-48-56</a>
                <button href="" class="call-back__button">Заказать звонок</button>
             </div>
          </div>
+         <a href="tel:+78007754856" class="header__catalog button__catalog header__catalog--mobile">
+            <img src="./build/img/header/telephone.png" alt="">
+            <span>контаты</span>
+         </a>
          <div class="header__catalog--open hidden">
             <div class="header__catalog_item">
                <img class="catalog__img" src="./build/img/header/img1.png" alt="">
@@ -69,7 +78,21 @@
             </div>
          </div>
       </div>
+      <div class="header__nav--mobile">
+         <a href="#">О КОМПАНИИ</a>
+         <a href="#">Услуги</a>
+         <a href="#">Проекты</a>
+         <a href="#">Статьи</a>
+         <a href="#">Контакты</a>
+      </div>
 
+      <div class="header__nav--mobile-menu hidden">
+         <a href="#">О КОМПАНИИ</a>
+         <a href="#">Услуги</a>
+         <a href="#">Проекты</a>
+         <a href="#">Статьи</a>
+         <a href="#">Контакты</a>
+      </div>
       <h1 class="header__title">Постройте красивую террасу из композитной доски ДПК, которая прослужит 30 лет без
          ремонта и покраски</h1>
       <h2 class="header__subtitle">Производим более 10 моделей доски, в 15 цветах. Любой заказ за 7 дней, с гарантией до
@@ -91,8 +114,8 @@
             <p class="catalog__top_title">
                Более<br>
                <span class="catalog__top_title--plus">+ </span>
-               <span class="catalog__top_title--big-text">1000 м<span
-                     class="catalog__top_title--meter">2</span> </span><br>
+               <span class="catalog__top_title--big-text">1000 м<span class="catalog__top_title--meter">2</span>
+               </span><br>
                в наличии на складе
             </p>
          </div>
@@ -116,8 +139,8 @@
             <p class="catalog__top_title">
                Строим<br>
                <span class="catalog__top_title--plus">+ </span>
-               <span class="catalog__top_title--big-text"><span
-                     class="catalog__top_title--full-construction">"под ключ"</span> </span><br>
+               <span class="catalog__top_title--big-text"><span class="catalog__top_title--full-construction">"под
+                     ключ"</span> </span><br>
             </p>
          </div>
       </div>
@@ -165,6 +188,51 @@
                </div>
             </div>
 
+            <div class="catalog__items_slider">
+               <div class="catalog__item_slider catalog__bg_1">
+                  <div class="catalog__item_context">
+                     <h4 class="catalog__item_title">Террасная доска</h4>
+                     <a href="#" class="catalog__item_link">Подробнее ➔</a>
+                  </div>
+               </div>
+               <div class="catalog__item_slider catalog__bg_2">
+                     <div class="catalog__item_context">
+                  <h4 class="catalog__item_title">Ступени</h4>
+                  <a href="#" class="catalog__item_link">Подробнее ➔</a>
+                     </div>
+               </div>
+               <div class="catalog__item_slider catalog__bg_3">
+                     <div class="catalog__item_context">
+                  <h4 class="catalog__item_title">Фасадная доска</h4>
+                  <a href="#" class="catalog__item_link">Подробнее ➔</a>
+                     </div>
+               </div>
+               <div class="catalog__item_slider catalog__bg_4">
+                     <div class="catalog__item_context">
+                  <h4 class="catalog__item_title">Ограждения и заборы</h4>
+                  <a href="#" class="catalog__item_link">Подробнее ➔</a>
+                     </div>
+               </div>
+               <div class="catalog__item_slider catalog__bg_5">
+                     <div class="catalog__item_context">
+                  <h4 class="catalog__item_title">Хозяйственные блоки</h4>
+                  <a href="#" class="catalog__item_link">Подробнее ➔</a>
+                     </div>
+               </div>
+               <div class="catalog__item_slider catalog__bg_6">
+                     <div class="catalog__item_context">
+                  <h4 class="catalog__item_title">Садовые аксессуары</h4>
+                  <a href="#" class="catalog__item_link">Подробнее ➔</a>
+                     </div>
+               </div>
+               <div class="catalog__item_slider catalog__bg_7">
+                     <div class="catalog__item_context">
+                  <h4 class="catalog__item_title">Регулируемые опоры</h4>
+                  <a href="#" class="catalog__item_link">Подробнее ➔</a>
+                     </div>
+               </div>
+            </div>
+
             <div class="catalog__form">
                <div class="header__form form_container__mt">
                   <div class="form_container">
@@ -200,46 +268,19 @@
                   <div class="gallery__left">
                      <div class="gallery__left_container">
                         <span class="gallery__left--sm-text">Обьект:</span>
-                        <h3 class="gallery__title">Терраса в<br> “ЖК Акваполис”</h3>
+                        <h3 class="gallery__title">Терраса в “ЖК Акваполис”</h3>
                         <div class="gallery__title_description">
                            <span
                               class="gallery__left--sm-text gallery__left--grey">Площадь:<br><span>3000м</span><sup>2</sup></span>
                            <span class="gallery__left--sm-text gallery__left--grey">Срок:<br><span>20 дней</span></span>
                         </div>
                         <span class="gallery__left_task">Задача</span>
-                        <span class="gallery__left_subtask">В каждом случае цена и сроки<br> определяются
-                           индивидуально.<br>— Закажите консультацию </span>
+                        <span class="gallery__left_subtask">В каждом случае цена и сроки определяются
+                           индивидуально.— Закажите консультацию </span>
                         <span class="gallery__left_task">Решение</span>
-                        <span class="gallery__left_subtask">В каждом случае цена и сроки<br> определяются
-                           индивидуально.<br>— Закажите консультацию </span>
+                        <span class="gallery__left_subtask">В каждом случае цена и сроки определяются
+                           индивидуально.— Закажите консультацию </span>
                      </div>
-
-                  </div>
-                  <div class="gallery__right">
-                     <img class="gallery__right_img" src="./build/img/main/gallery/img1.png" alt="">
-                  </div>
-               </div>
-            </div>
-
-            <div>
-               <div class="gallery__slick_item">
-                  <div class="gallery__left">
-                     <div class="gallery__left_container">
-                        <span class="gallery__left--sm-text">Обьект:</span>
-                        <h3 class="gallery__title">Терраса в<br> “ЖК Акваполис”</h3>
-                        <div class="gallery__title_description">
-                           <span
-                              class="gallery__left--sm-text gallery__left--grey">Площадь:<br><span>5000м</span><sup>2</sup></span>
-                           <span class="gallery__left--sm-text gallery__left--grey">Срок:<br><span>10 дней</span></span>
-                        </div>
-                        <span class="gallery__left_task">Задача</span>
-                        <span class="gallery__left_subtask">В каждом случае цена и сроки<br> определяются
-                           индивидуально.<br>— Закажите консультацию </span>
-                        <span class="gallery__left_task">Решение</span>
-                        <span class="gallery__left_subtask">В каждом случае цена и сроки<br> определяются
-                           индивидуально.<br>— Закажите консультацию </span>
-                     </div>
-
                   </div>
                   <div class="gallery__right">
                      <img class="gallery__right_img" src="./build/img/main/gallery/img1.png" alt="">
@@ -251,20 +292,19 @@
                   <div class="gallery__left">
                      <div class="gallery__left_container">
                         <span class="gallery__left--sm-text">Обьект:</span>
-                        <h3 class="gallery__title">Терраса в<br> “ЖК Акваполис”</h3>
+                        <h3 class="gallery__title">Терраса в “ЖК Акваполис”</h3>
                         <div class="gallery__title_description">
                            <span
-                              class="gallery__left--sm-text gallery__left--grey">Площадь:<br><span>5000м</span><sup>2</sup></span>
-                           <span class="gallery__left--sm-text gallery__left--grey">Срок:<br><span>10 дней</span></span>
+                              class="gallery__left--sm-text gallery__left--grey">Площадь:<br><span>3000м</span><sup>2</sup></span>
+                           <span class="gallery__left--sm-text gallery__left--grey">Срок:<br><span>20 дней</span></span>
                         </div>
                         <span class="gallery__left_task">Задача</span>
-                        <span class="gallery__left_subtask">В каждом случае цена и сроки<br> определяются
-                           индивидуально.<br>— Закажите консультацию </span>
+                        <span class="gallery__left_subtask">В каждом случае цена и сроки определяются
+                           индивидуально.— Закажите консультацию </span>
                         <span class="gallery__left_task">Решение</span>
-                        <span class="gallery__left_subtask">В каждом случае цена и сроки<br> определяются
-                           индивидуально.<br>— Закажите консультацию </span>
+                        <span class="gallery__left_subtask">В каждом случае цена и сроки определяются
+                           индивидуально.— Закажите консультацию </span>
                      </div>
-
                   </div>
                   <div class="gallery__right">
                      <img class="gallery__right_img" src="./build/img/main/gallery/img1.png" alt="">
@@ -276,20 +316,19 @@
                   <div class="gallery__left">
                      <div class="gallery__left_container">
                         <span class="gallery__left--sm-text">Обьект:</span>
-                        <h3 class="gallery__title">Терраса в<br> “ЖК Акваполис”</h3>
+                        <h3 class="gallery__title">Терраса в “ЖК Акваполис”</h3>
                         <div class="gallery__title_description">
                            <span
-                              class="gallery__left--sm-text gallery__left--grey">Площадь:<br><span>5000м</span><sup>2</sup></span>
-                           <span class="gallery__left--sm-text gallery__left--grey">Срок:<br><span>10 дней</span></span>
+                              class="gallery__left--sm-text gallery__left--grey">Площадь:<br><span>3000м</span><sup>2</sup></span>
+                           <span class="gallery__left--sm-text gallery__left--grey">Срок:<br><span>20 дней</span></span>
                         </div>
                         <span class="gallery__left_task">Задача</span>
-                        <span class="gallery__left_subtask">В каждом случае цена и сроки<br> определяются
-                           индивидуально.<br>— Закажите консультацию </span>
+                        <span class="gallery__left_subtask">В каждом случае цена и сроки определяются
+                           индивидуально.— Закажите консультацию </span>
                         <span class="gallery__left_task">Решение</span>
-                        <span class="gallery__left_subtask">В каждом случае цена и сроки<br> определяются
-                           индивидуально.<br>— Закажите консультацию </span>
+                        <span class="gallery__left_subtask">В каждом случае цена и сроки определяются
+                           индивидуально.— Закажите консультацию </span>
                      </div>
-
                   </div>
                   <div class="gallery__right">
                      <img class="gallery__right_img" src="./build/img/main/gallery/img1.png" alt="">
@@ -301,26 +340,33 @@
                   <div class="gallery__left">
                      <div class="gallery__left_container">
                         <span class="gallery__left--sm-text">Обьект:</span>
-                        <h3 class="gallery__title">Терраса в<br> “ЖК Акваполис”</h3>
+                        <h3 class="gallery__title">Терраса в “ЖК Акваполис”</h3>
                         <div class="gallery__title_description">
                            <span
-                              class="gallery__left--sm-text gallery__left--grey">Площадь:<br><span>5000м</span><sup>2</sup></span>
-                           <span class="gallery__left--sm-text gallery__left--grey">Срок:<br><span>10 дней</span></span>
+                              class="gallery__left--sm-text gallery__left--grey">Площадь:<br><span>3000м</span><sup>2</sup></span>
+                           <span class="gallery__left--sm-text gallery__left--grey">Срок:<br><span>20 дней</span></span>
                         </div>
                         <span class="gallery__left_task">Задача</span>
-                        <span class="gallery__left_subtask">В каждом случае цена и сроки<br> определяются
-                           индивидуально.<br>— Закажите консультацию </span>
+                        <span class="gallery__left_subtask">В каждом случае цена и сроки определяются
+                           индивидуально.— Закажите консультацию </span>
                         <span class="gallery__left_task">Решение</span>
-                        <span class="gallery__left_subtask">В каждом случае цена и сроки<br> определяются
-                           индивидуально.<br>— Закажите консультацию </span>
+                        <span class="gallery__left_subtask">В каждом случае цена и сроки определяются
+                           индивидуально.— Закажите консультацию </span>
                      </div>
-
                   </div>
                   <div class="gallery__right">
                      <img class="gallery__right_img" src="./build/img/main/gallery/img1.png" alt="">
                   </div>
                </div>
             </div>
+
+            
+
+            
+
+            
+
+            
 
          </div>
 
@@ -341,18 +387,19 @@
                         <label class="input-helper input-helper--radio">
                            <input type="radio" name="radio" hidden checked>
                            <span></span>
-                           <span class="form--bold">Шовная </span> (шов при
-                           укладке 4 мм для вентиляции под террасой и лучшего отвода воды)
+                           <p><span class="form--bold">Шовная </span> (шов при
+                              укладке 4 мм для вентиляции под террасой и лучшего отвода воды)</p>
                         </label>
                         <label class="input-helper input-helper--radio">
                            <input type="radio" name="radio" hidden>
                            <span></span>
-                           <span class="form--bold">Безшовная </span>
-                           (соединяется друг с другом образую сплошной настил. Есть ограничения для открытых
-                           площадок)
+                           <p><span class="form--bold">Безшовная </span>
+                              (соединяется друг с другом образую сплошной настил. Есть ограничения для открытых
+                              площадок)</p>
                         </label>
                      </div>
                      <button class="form__button">Отправить заявку</button>
+                     <a href="#" class="form__button__mobile"></a>
                   </form>
                </div>
             </div>
@@ -424,10 +471,24 @@
                <h2 class="catalog__name_title">Фотогалерея<br> нашего производства</h2>
                <span class="catalog__name_subtitle">Посмотрите на<br> наше производство</span>
             </div>
-
+            <div class="our-production__slick">
+               <div class="our-production__slick_item">
+                  <img src="./build/img/main/our-production/img2.png" alt="">
+               </div>
+               <div class="our-production__slick_item">
+                  <img src="./build/img/main/our-production/img2.png" alt="">
+               </div>
+               <div class="our-production__slick_item">
+                  <img src="./build/img/main/our-production/img1.png" alt="">
+               </div>
+               <div class="our-production__slick_item">
+                  <img src="./build/img/main/our-production/img3.png" alt="">
+               </div>
+            </div>
             <div class="our-production__content">
                <div class="our-production__left">
-                  <img src="./build/img/main/our-production/img1.png" alt="">
+                  <img class="our-production__left_img" src="./build/img/main/our-production/img1.png" alt="">
+
                   <div class="our-production__quote">
                      <img src="./build/img/main/our-production/man.png" class="our-production__quote_img">
                      <div class="our-production__quote_context">
@@ -448,7 +509,7 @@
          </div>
       </section>
 
-      <div class="section-video">
+      <section class="section-video">
          <div class="section-video__container">
             <h3 class="section-video__title">Смотрите видео о нашем производстве<br> и свойствах террасной доски из ДПК
             </h3>
@@ -456,7 +517,7 @@
                <img src="./build/img/main/video/play.png" alt="">
             </a>
          </div>
-      </div>
+      </section>
 
       <section class="catalog">
          <div class="catalog__container--mt-0">
@@ -496,6 +557,51 @@
                <a href="#" class="catalog__item_link">Подробнее ➔</a>
             </div>
          </div>
+
+         <div class="catalog__items_slider">
+               <div class="catalog__item_slider catalog__bg_1">
+                  <div class="catalog__item_context">
+                     <h4 class="catalog__item_title">Террасная доска</h4>
+                     <a href="#" class="catalog__item_link">Подробнее ➔</a>
+                  </div>
+               </div>
+               <div class="catalog__item_slider catalog__bg_2">
+                     <div class="catalog__item_context">
+                  <h4 class="catalog__item_title">Ступени</h4>
+                  <a href="#" class="catalog__item_link">Подробнее ➔</a>
+                     </div>
+               </div>
+               <div class="catalog__item_slider catalog__bg_3">
+                     <div class="catalog__item_context">
+                  <h4 class="catalog__item_title">Фасадная доска</h4>
+                  <a href="#" class="catalog__item_link">Подробнее ➔</a>
+                     </div>
+               </div>
+               <div class="catalog__item_slider catalog__bg_4">
+                     <div class="catalog__item_context">
+                  <h4 class="catalog__item_title">Ограждения и заборы</h4>
+                  <a href="#" class="catalog__item_link">Подробнее ➔</a>
+                     </div>
+               </div>
+               <div class="catalog__item_slider catalog__bg_5">
+                     <div class="catalog__item_context">
+                  <h4 class="catalog__item_title">Хозяйственные блоки</h4>
+                  <a href="#" class="catalog__item_link">Подробнее ➔</a>
+                     </div>
+               </div>
+               <div class="catalog__item_slider catalog__bg_6">
+                     <div class="catalog__item_context">
+                  <h4 class="catalog__item_title">Садовые аксессуары</h4>
+                  <a href="#" class="catalog__item_link">Подробнее ➔</a>
+                     </div>
+               </div>
+               <div class="catalog__item_slider catalog__bg_7">
+                     <div class="catalog__item_context">
+                  <h4 class="catalog__item_title">Регулируемые опоры</h4>
+                  <a href="#" class="catalog__item_link">Подробнее ➔</a>
+                     </div>
+               </div>
+            </div>
 
          </div>
       </section>
@@ -693,7 +799,8 @@
          <div class="form_container">
             <a href="#" class="popup__close"><img src="./build/img/close.png" alt=""></a>
             <span class="popup-tnx__title">Заказать звонок</span>
-            <span class="popup-tnx__subtitle">Оставьте свои данные и наш специалист проконсультирует и<br> поможет подобрать нужный материал</span>
+            <span class="popup-tnx__subtitle">Оставьте свои данные и наш специалист проконсультирует и<br> поможет
+               подобрать нужный материал</span>
             <form class="popup-callback__form" action="">
                <input class="form__input" type="text" placeholder="Ваше имя" required>
                <input class="form__input phone_mask" type="text" placeholder="Ваш номер телефона" required>
@@ -708,7 +815,8 @@
          <div class="form_container">
             <a href="#" class="popup__close2"><img src="./build/img/close.png" alt=""></a>
             <span class="popup-tnx__title">Спасибо за заявку</span>
-            <span class="popup-tnx__subtitle">Наш специалист свяжется с Вами в течение нескольких минут<br> и ответит на все Ваши вопросы</span>
+            <span class="popup-tnx__subtitle">Наш специалист свяжется с Вами в течение нескольких минут<br> и ответит на
+               все Ваши вопросы</span>
          </div>
       </div>
    </div>
