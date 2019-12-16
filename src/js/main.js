@@ -105,24 +105,33 @@ $(document).ready(function () {
 // Появление попапа
 var callbackOpen = document.querySelector('.call-back__button')
 var popupCallback = document.querySelector('.popup-callback')
+var popupClose = document.querySelector('.popup__close')
+
 
 callbackOpen.addEventListener('click', function (e) {
 	popupCallback.classList.remove('hidden')
 	e.preventDefault();
 })
-
-var popupClose = document.querySelector('.popup__close')
 popupClose.addEventListener('click', function (e) {
 	popupCallback.classList.add('hidden')
 	e.preventDefault();
 })
 
+var writeOpen = document.querySelector('.write__button')
+var popupWrite = document.querySelector('.popup-write')
+var popupClose3 = document.querySelector('.popup__close3')
 
-var callbackOpen2 = document.querySelector('.call-back__button2')
-callbackOpen2.addEventListener('click', function (e) {
-	popupCallback.classList.remove('hidden')
+
+writeOpen.addEventListener('click', function (e) {
+	popupWrite.classList.remove('hidden')
 	e.preventDefault();
 })
+popupClose3.addEventListener('click', function (e) {
+	popupWrite.classList.add('hidden')
+	e.preventDefault();
+})
+
+
 
 // Скрытие попапа при клике на пустом месте
 $(".popup-tnx").on('click', function (e) {
@@ -130,6 +139,9 @@ $(".popup-tnx").on('click', function (e) {
 })
 $(".popup-callback").on('click', function (e) {
 	if (e.target == this) $(".popup-callback").addClass('hidden');
+})
+$(".popup-write").on('click', function (e) {
+	if (e.target == this) $(".popup-write").addClass('hidden');
 })
 
 // Появление меню

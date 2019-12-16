@@ -7,6 +7,8 @@
    <meta name="viewport" content="width=device-width, initial-scale=1.0">
    <meta http-equiv="X-UA-Compatible" content="ie=edge">
    <!-- <link rel="shortcut icon" href="" type="image/x-icon"> -->
+   <!-- Font Awesome -->
+   <script src="https://kit.fontawesome.com/cb7e235376.js" crossorigin="anonymous"></script>
    <link rel="stylesheet" type="text/css" href="./src/dist/slick/slick.css" />
    <link rel="stylesheet" type="text/css" href="./src/dist/slick/slick-theme.css" />
    <link rel="stylesheet" href="./src/dist/fancybox/jquery.fancybox.css">
@@ -360,14 +362,6 @@
                </div>
             </div>
 
-            
-
-            
-
-            
-
-            
-
          </div>
 
       </section>
@@ -649,8 +643,7 @@
 
       <section class="discount">
          <div class="discount__container">
-            <h3 class="discount__title">Сэкономь время и нервы, доверь работу<br> профессионалам мы знаем все тонкости
-               работы с ДПК</h3>
+            <h3 class="discount__title">Сэкономь время, доверься профессионалам,<br> мы знаем все тонкости монтажа доски из ДПК</h3>
             <div class="header__form header__form--discount">
                <div class=" required_container form_container--discount">
                   <h3 class="form__title">Закажи монтаж до конца месяца<br>и получи дополнительно <span
@@ -746,18 +739,28 @@
 
       <section class="map">
          <script type="text/javascript" charset="utf-8" async
-            src="https://api-maps.yandex.ru/services/constructor/1.0/js/?um=constructor%3A8e972b5f19e3481c169bf5496a7a57efe6b8ea94b907756b5580b0ededb18c16&amp;width=100%25&amp;height=720&amp;lang=ru_RU&amp;scroll=true">
+            src="https://api-maps.yandex.ru/services/constructor/1.0/js/?um=constructor%3A8e972b5f19e3481c169bf5496a7a57efe6b8ea94b907756b5580b0ededb18c16&amp;width=100%25&amp;height=720&amp;lang=ru_RU&amp;scroll=false">
          </script>
          <div class="map__container">
             <div class="map__contacts">
                <h5 class="contacts__title">Мы ближе чем кажется</h5>
+               <span class="contacts__description">Работаем по всей России, отправляем материал в любой регион</span>
                <span class="contacts__subtitle">Телефон:</span>
                <a class="contacts__phone" href="">8-800-775-48-56</a>
                <span class="contacts__subtitle">Электронная почта:</span>
-               <a class="contacts__email" href="">info@gofen.ru</a>
+               <a class="contacts__email" href="mailto:info@dekmaster.ru">info@dekmaster.ru</a>
                <span class="contacts__subtitle">Адрес:</span>
                <p class="contacts__address">г. Москва, 1-ый Нагатинский проезд 4, оф. 322</p>
-               <button class="contacts__button call-back__button2">Написать нам</button>
+               <div class="map__contacts_social">
+                  <span class="contacts__subtitle">Подписывайтесь на нас</span>
+                  <div class="footer__social">
+                     <a href="#"><img src="./build/img/footer/FaceBook_512x512-64x64.png" alt=""></a>
+                     <a href="#"><img src="./build/img/footer/vk-64x64.png" alt=""></a>
+                     <a href="#"><img src="./build/img/footer/instagram-64x64.png" alt=""></a>
+                     <a href="#"><img src="./build/img/footer/youtube-1-64x64.png" alt=""></a>
+                  </div>
+               </div>
+               <button class="contacts__button write__button">Написать нам</button>
             </div>
          </div>
       </section>
@@ -772,9 +775,10 @@
                   <img src="./build/img/footer/ДекМастер_лого_3.png" alt="">
                </a>
                <div class="footer__social">
-                  <a href=""><img src="./build/img/footer/fb.png" alt=""></a>
-                  <a href=""><img src="./build/img/footer/vk.png" alt=""></a>
-                  <a href=""><img src="./build/img/footer/inst.png" alt=""></a>
+                  <a href="#"><img src="./build/img/footer/FaceBook_512x512-64x64.png" alt=""></a>
+                     <a href="#"><img src="./build/img/footer/vk-64x64.png" alt=""></a>
+                     <a href="#"><img src="./build/img/footer/instagram-64x64.png" alt=""></a>
+                     <a href="#"><img src="./build/img/footer/youtube-1-64x64.png" alt=""></a>
                </div>
             </div>
             <div class="footer__top_right">
@@ -804,6 +808,24 @@
             <form class="popup-callback__form" action="">
                <input class="form__input" type="text" placeholder="Ваше имя" required>
                <input class="form__input phone_mask" type="text" placeholder="Ваш номер телефона" required>
+               <button class="form__button">Отправить заявку</button>
+            </form>
+         </div>
+      </div>
+   </div>
+
+   <div class="popup-write hidden">
+      <div class="header__form">
+         <div class="form_container">
+            <a href="#" class="popup__close3"><img src="./build/img/close.png" alt=""></a>
+            <span class="popup-tnx__title">Напишите нам</span>
+            <!-- <span class="popup-tnx__subtitle">Оставьте свои данные и наш специалист проконсультирует и<br> поможет
+               подобрать нужный материал</span> -->
+            <form class="popup-callback__form" action="">
+               <input class="form__input" type="text" placeholder="Ваше имя" required>
+               <input class="form__input phone_mask" type="text" placeholder="Ваш номер телефона" required>
+               <input class="form__input" type="text" placeholder="Ваш E-mail" required>
+               <textarea class="form__input" type="text" placeholder="Ваше сообщение"></textarea>
                <button class="form__button">Отправить заявку</button>
             </form>
          </div>
